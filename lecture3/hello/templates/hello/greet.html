@@ -1,0 +1,18 @@
+
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'greet/styles.css' %}" rel="stylesheet">
+    <title>Hello</title>
+</head>
+<body>
+    <h1>Hello {{name}} Today is {% 
+        import datetime
+        date=datetime.datetime.now()
+        {{date}}
+        %}</h1>
+</body>
+</html>
